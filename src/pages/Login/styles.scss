@@ -1,0 +1,126 @@
+.loginContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // padding: 0 1.5rem;
+
+  height: 100%;
+
+  > .loginCard {
+    background-image: url(../../assets/images/wave.svg);
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+    > .loginCardInner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+      height: 100%;
+      padding: 2.5rem 2rem;
+      > .formContainer {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: auto;
+        margin-bottom: auto;
+
+        > .title {
+          align-self: flex-start;
+        }
+        > .lead {
+          padding: 2rem 0 1.5rem;
+        }
+        > form {
+          display: flex;
+          flex-direction: column; 
+          
+          width: 100%;
+          padding: 0 0 2.5rem;
+          > .MuiFormControl-root {
+            padding: 0 0 1rem;
+          }
+          > button {
+            margin-top: 1rem;
+          }
+        }
+        > .loginGoogle {
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .loginContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+  
+    height: 100%;
+  
+    > .loginCard {
+      background-image: url(../../assets/images/wave.svg);
+      background-repeat: no-repeat;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      height: auto;
+      width: auto;
+      > .loginCardInner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        height: 100%;
+        padding: 5rem 2.5rem 2.5rem;
+        > .formContainer {
+          display: flex;
+          flex-direction: column;
+  
+          margin-top: auto;
+          margin-bottom: auto;
+  
+          > .title {
+            padding-top: 2.5rem;
+            align-self: flex-start;
+          }
+          > .lead {
+            padding: 2rem 0 1.5rem;
+          }
+          > form {
+            display: flex;
+            flex-direction: column; 
+            
+            width: 100%;
+            padding: 0 0 2.5rem;
+            > .MuiFormControl-root {
+              padding: 0 0 1rem;
+            }
+            > button {
+              margin-top: 1rem;
+            }
+          }
+          > .loginGoogle {
+            margin-top: 2.5rem;
+            align-self: center;
+          }
+        }
+        > .noAccount {
+          position: absolute;
+          bottom: 1rem;
+        }
+      }
+    }
+  }
+}

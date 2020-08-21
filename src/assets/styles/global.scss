@@ -1,0 +1,28 @@
+:root {
+  // --color-primary: #34373D;
+  // --color-secondary: #0000008A;
+  // --color-title: #424242;
+  // --color-white: #FFF;
+  // --color-gray: #ECEFF1;
+  // --color-green: #93E0AC;
+  // --color-background-primary: #039BE5;
+  // --color-background-secondary: #FBC02D;
+  // --color-background-red: #FF8A65;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, #root {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+* {
+  box-sizing: border-box;
+}
