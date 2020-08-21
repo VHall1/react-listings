@@ -106,17 +106,12 @@ const Login = () => {
                   variant="h5"
                   className="title"
                 >
-                  Login
+                  Welcome back
                 </Typography>
-                <Typography
-                  className="lead"
+                
+                <form
+                  onSubmit={handleLogin}
                 >
-                  Welcome Back. Please login to your account.
-                </Typography>
-
-              <form
-                onSubmit={handleLogin}
-              >
                   <FormControl
                     error={values.emailExtra !== "" ? true : false}
                   >
@@ -155,9 +150,9 @@ const Login = () => {
                   </FormControl>
                   
                   <Button
+                    size="large"
                     type="submit"
                     color="primary"
-                    size="large"
                     variant="contained"
                   >
                     Login
@@ -171,7 +166,7 @@ const Login = () => {
               </div>
 
               <Typography className="noAccount">
-                Don't have an account? <Link to="/signup">Signup here</Link>
+                Don't have an account? <Link to="/signup">Sign Up</Link>
               </Typography>
             </CardContent>
           </Card>

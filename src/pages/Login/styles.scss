@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // padding: 0 1.5rem;
 
   height: 100%;
 
@@ -32,25 +31,28 @@
         margin-bottom: auto;
 
         > .title {
-          align-self: flex-start;
-        }
-        > .lead {
-          padding: 2rem 0 1.5rem;
+          color: var(--color-primary);
+          font-weight: 700;
+
+          align-self: center;
+          padding-bottom: 2.5rem;
         }
         > form {
           display: flex;
           flex-direction: column; 
           
           width: 100%;
-          padding: 0 0 2.5rem;
+          padding-bottom: 2.5rem;
           > .MuiFormControl-root {
-            padding: 0 0 1rem;
+            padding-bottom: 1.5rem;
           }
           > button {
+            background-color: var(--color-primary);
             margin-top: 1rem;
           }
         }
         > .loginGoogle {
+          margin-top: 2.5rem;
           align-self: center;
         }
       }
@@ -59,61 +61,14 @@
 }
 @media (min-width: 1024px) {
   .loginContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 1.5rem;
-  
-    height: 100%;
-  
     > .loginCard {
-      background-image: url(../../assets/images/wave.svg);
-      background-repeat: no-repeat;
-  
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  
       height: auto;
       width: auto;
       > .loginCardInner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
-        height: 100%;
-        padding: 5rem 2.5rem 2.5rem;
+        padding: 5rem 4.5rem 2.5rem;
         > .formContainer {
-          display: flex;
-          flex-direction: column;
-  
-          margin-top: auto;
-          margin-bottom: auto;
-  
           > .title {
             padding-top: 2.5rem;
-            align-self: flex-start;
-          }
-          > .lead {
-            padding: 2rem 0 1.5rem;
-          }
-          > form {
-            display: flex;
-            flex-direction: column; 
-            
-            width: 100%;
-            padding: 0 0 2.5rem;
-            > .MuiFormControl-root {
-              padding: 0 0 1rem;
-            }
-            > button {
-              margin-top: 1rem;
-            }
-          }
-          > .loginGoogle {
-            margin-top: 2.5rem;
-            align-self: center;
           }
         }
         > .noAccount {
